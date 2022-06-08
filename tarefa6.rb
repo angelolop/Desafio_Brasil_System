@@ -2,29 +2,29 @@
 
 
 def solicitarNumero()
-    puts "Digite um número positivo para começar a contagem regressiva."
-    gets_numero = gets.chomp;
-    puts"\n\n"
+    puts "Digite um número positivo para a contagem regressiva."
+    numero = gets.chomp
     
-    if !gets_numero.index(/[a-z]/i);
-        if gets_numero.to_i > 0 
-            contador(gets_numero.to_i)
+    if !numero.index(/[a-z]/i)
+        if numero.to_i > 0 
+            contador(numero.to_i)
         else
-            puts "ERRO! o número informado deve ser positivo!"
-            solicitarNumero();
+            puts "O número digitado tem que ser positivo, por favor, tente novamente."
+            solicitarNumero()
         end
     else
-        puts "ERRO! Por favor insira um número válido!"
-        solicitarNumero();
+        puts "Por favor insira um número válido."
+        solicitarNumero()
     end   
 end
 
-def contador(gets_numero = 0)
-    contador = gets_numero;
+def contador(numero = 0)
+    contador = numero
     while contador >= 0 do 
-        puts contador;
-        contador -=1;
+        puts contador
+        contador -= 1
     end
     puts "KABUM"
 end
+
 solicitarNumero()
