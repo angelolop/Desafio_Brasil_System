@@ -14,7 +14,7 @@ dddCidades = {
 }
 
 if dddCidades.include?(ddd)
-    puts "DDD de #{dddCidades.fetch(ddd)}";
+    puts "DDD de #{dddCidades.fetch(ddd)}"
 else
     puts "DDD não cadastrado"
     requisitarDDD()
