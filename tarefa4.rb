@@ -1,4 +1,4 @@
-#Faça o somatório da sua data de nascimento."
+#Faça o somatório da sua data de nascimento.
 
 def requisitarData
 
