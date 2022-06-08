@@ -4,7 +4,7 @@ def requisitarData
 
     puts "Digite sua data de nascimento."
     print "\n(dd/mm/aaaa) : "
-    data = gets.chomp;
+    data = gets.chomp
 
     verificarData(data)
 
